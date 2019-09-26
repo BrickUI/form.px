@@ -1,0 +1,14 @@
+{
+    "name": "form.px",
+    "version": "0.0.1",
+    "description": "form layout",
+    "keywords": [
+        "form"
+    ],
+    "main": "./src/form.css",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BrickUI/form.px"
+    },
+    "license": "MIT"
+}

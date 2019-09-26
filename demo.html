@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
+        <title>Form px Demo</title>
+        <link rel="stylesheet" media="all" href="./src/form.css">
+    </head>
+    <style>
+        .inputdemo {
+            width: 100%;
+            height: 30px;
+        }
+        .inputdemo.sm {
+            height: 24px;
+        }
+        .inputdemo.lg {
+            height: 36px;
+        }
+        .from-error .inputdemo {
+            border: 1px solid red;
+        }
+    </style>
+    <body>
+        <h2 style="text-align: center;">表单布局 Form Layout</h2>
+        <p style="width: 600px; margin: 0 auto; color: #666;">
+            这里只是表单的布局，没有input,checkbox...
+            <br />
+            Here's just the layout of the form, no input, checkbox...
+            <br />
+            <br />
+            表单内容高度: sm 24px, default 30px, lg 36px.
+            <br />
+            Form content height: sm 24px, default 30px, lg 36px.
+            <br />
+            <br />
+            当消息显示当时候，表单内容当高度不会变化，这个非常重要
+            <br />
+            When the message is displayed, the content of the form remains unchanged when the height is high, which is very important.
+            <br />
+            <br />
+            所以它可以垂直布局，多列布局，这是依赖于高度不会变化。
+            <br />
+            So it can be vertical layout, multi-column layout, which depends on the height will not change.
+        </p>
+        <h3 style="text-align: center;">Default</h3>
+            <div style="margin: 20px auto; width: 600px; border:1px solid #ccc; padding: 20px;">
+                    <div class="form clearfix">
+                        <div class="form-item">
+                            <div class="form-label">
+                                Lable:
+                            </div>
+                            <div class="from-content">
+                                <input type="text" class="inputdemo" />
+                                <span class="form-message">Helper message</span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                                <div class="form-label">
+                                    Lable:
+                                </div>
+                                <div class="from-content">
+                                    <input type="text" class="inputdemo" />
+                                </div>
+                        </div>
+                        <div class="form-item from-error">
+                                <div class="form-label">
+                                    Lable:
+                                </div>
+                                <div class="from-content">
+                                    <input type="text" class="inputdemo" />
+                                    <span class="form-message">Error messages</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <h3 style="text-align: center;">vertical</h3>
+                <div style="margin: 20px auto; width: 600px; border:1px solid #ccc; padding: 20px;">
+                        <div class="form clearfix form-vertical">
+                            <div class="form-item">
+                                <div class="form-label">
+                                    Lable:
+                                </div>
+                                <div class="from-content">
+                                    <input type="text" class="inputdemo" />
+                                    <span class="form-message">Helper message</span>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                    <div class="form-label">
+                                        Lable:
+                                    </div>
+                                    <div class="from-content">
+                                        <input type="text" class="inputdemo" />
+                                    </div>
+                            </div>
+                            <div class="form-item from-error">
+                                    <div class="form-label">
+                                        Lable:
+                                    </div>
+                                    <div class="from-content">
+                                        <input type="text" class="inputdemo" />
+                                        <span class="form-message">Error messages</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <h3 style="text-align: center;">column 2 from-col-2</h3>
+        <div style="margin: 20px auto; width: 800px; border:1px solid #ccc; padding: 20px;">
+            <div class="form clearfix form-col-2">
+                <div class="form-item">
+                    <div class="form-label">
+                        Lable:
+                    </div>
+                    <div class="from-content">
+                        <input type="text" class="inputdemo" />
+                        <span class="form-message">Helper message</span>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-label">
+                        Lable:
+                    </div>
+                    <div class="from-content">
+                        <input type="text" class="inputdemo" />
+                    </div>
+                </div>
+                <div class="form-item">
+                        <div class="form-label">
+                            Lable:
+                        </div>
+                        <div class="from-content">
+                            <input type="text" class="inputdemo" />
+                        </div>
+                </div>
+                <div class="form-item from-error">
+                        <div class="form-label">
+                            Lable:
+                        </div>
+                        <div class="from-content">
+                            <input type="text" class="inputdemo" />
+                            <span class="form-message">Error messages</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <h3 style="text-align: center;">column 3 from-col-2</h3>
+        <div style="margin: 20px auto; width: 1200px; border:1px solid #ccc; padding: 20px;">
+                <div class="form clearfix form-col-3">
+                    <div class="form-item">
+                        <div class="form-label">
+                            Lable:
+                        </div>
+                        <div class="from-content">
+                            <input type="text" class="inputdemo" />
+                            <span class="form-message">Helper message</span>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-label">
+                            Lable:
+                        </div>
+                        <div class="from-content">
+                            <input type="text" class="inputdemo" />
+                        </div>
+                    </div>
+                    <div class="form-item">
+                            <div class="form-label">
+                                Lable:
+                            </div>
+                            <div class="from-content">
+                                <input type="text" class="inputdemo" />
+                            </div>
+                    </div>
+                    <div class="form-item from-error">
+                            <div class="form-label">
+                                Lable:
+                            </div>
+                            <div class="from-content">
+                                <input type="text" class="inputdemo" />
+                                <span class="form-message">Error messages</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <h3 style="text-align: center;">small from-sm</h3>
+            <div style="margin: 20px auto; width: 1200px; border:1px solid #ccc; padding: 20px;">
+                    <div class="form clearfix form-col-3 form-sm">
+                        <div class="form-item">
+                            <div class="form-label">
+                                Lable:
+                            </div>
+                            <div class="from-content">
+                                <input type="text" class="inputdemo sm" />
+                                <span class="form-message">Helper message</span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">
+                                Lable:
+                            </div>
+                            <div class="from-content">
+                                <input type="text" class="inputdemo sm" />
+                            </div>
+                        </div>
+                        <div class="form-item">
+                                <div class="form-label">
+                                    Lable:
+                                </div>
+                                <div class="from-content">
+                                    <input type="text" class="inputdemo sm" />
+                                </div>
+                        </div>
+                        <div class="form-item from-error">
+                                <div class="form-label">
+                                    Lable:
+                                </div>
+                                <div class="from-content">
+                                    <input type="text" class="inputdemo sm" />
+                                    <span class="form-message">Error messages</span>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            <h3 style="text-align: center;">large form-lg</h3>
+            <div style="margin: 20px auto; width: 1200px; border:1px solid #ccc; padding: 20px;">
+                    <div class="form clearfix form-col-3 form-lg">
+                        <div class="form-item">
+                            <div class="form-label">
+                                Lable:
+                            </div>
+                            <div class="from-content">
+                                <input type="text" class="inputdemo lg" />
+                                <span class="form-message">Helper message</span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">
+                                Lable:
+                            </div>
+                            <div class="from-content">
+                                <input type="text" class="inputdemo lg" />
+                            </div>
+                        </div>
+                        <div class="form-item">
+                                <div class="form-label">
+                                    Lable:
+                                </div>
+                                <div class="from-content">
+                                    <input type="text" class="inputdemo lg" />
+                                </div>
+                        </div>
+                        <div class="form-item from-error">
+                                <div class="form-label">
+                                    Lable:
+                                </div>
+                                <div class="from-content">
+                                    <input type="text" class="inputdemo lg" />
+                                    <span class="form-message">Error messages</span>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+    </body>
+</html>
